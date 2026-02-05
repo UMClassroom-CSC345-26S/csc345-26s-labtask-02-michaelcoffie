@@ -13,16 +13,18 @@ This labtask has several parts:
   You can get the interior volume of a car by asking an LLM, giving the make and model - something like
   "What is the interior volume of a Nissan Xterra?".
   Submit `MyCars.csv`. (1.0%)
-- The TA will combine all the samples into one spreadsheet that everyone can use.
-- Randomly split the data set into a training set of 80% and a testing set of 20%.
+- The TA will combine all the samples into one spreadsheet that everyone can use. You can add it to your
+  repository by merging my pull request.
+- Remove non-ordinal features, and normalize the ordinal features.
+  Randomly split the resultant data set into a training set of 80% and a testing set of 20%.
   Put the training set in a spreadsheet called `Training.csv` and the testing set in a spreadsheet
   called `Testing.csv`.
-  Use K-nearest neighbours classification in Python to train the model, then predict the make of
+  Use K-nearest neighbours classification in Python to train the model, then predict the `Style` of
   each car in the testing set.
   You must iterate over K to find the highest accuracy.
-  Call the Python program `KNNClassifier.py`.
+  Call the Python program `KNNClassifier.ipynb`/`KNNClassifier.py` (depending how you implement it).
   Create a spreadsheet called `Accuracy.csv` with the columns `K` and `Accuracy`, and record the
   accuracy achieved for each `K`.
   Report the results for the `K` with the highest accuracy by adding two new columns to  `Testing.csv` called
   `Prediction`, and `Confidence` to store the prediction and confidence for each car in the testing set.
-  Submit `Training.csv`, `Testing.csv`, `Accuracy.csv`, and `KNNClassifier.py`. (3.0%)
+  Submit `Training.csv`, `Testing.csv`, `Accuracy.csv`, and `KNNClassifier.ipynb`/`KNNClassifier.py`. (3.0%)
